@@ -129,10 +129,13 @@ main{
     border-radius: 12%;
 }
 
-#Video{
+#Video, #Spectifications{
     width: 100vw;
-    background: #0978a3;
     margin-left: -8px;
+}
+
+#Video{
+    background: #0978a3;
     padding-top: 2.5%;
     padding-bottom: 3%;
 }
@@ -155,4 +158,68 @@ main{
     width: 750px;
     height: 425px;
     border-radius: 2%;
+}
+
+.table-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#Pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 75px;
+  gap: 12px;
+}
+
+#Pricing .product{
+    background: #0978a3;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    width: 25vw;
+}
+
+#Pricing .product .level{
+    font-weight: bold;
+} 
+
+#Pricing .product .btn{
+    background-color: #28aade;
+    border: none;
+    padding: 2%;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+#Pricing .product .btn:hover{
+    color: #28aade;
+    background-color: #000;
+}
+
+#Pricing .product .btn:active{
+    opacity: 0.8;
 }
