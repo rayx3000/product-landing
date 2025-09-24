@@ -77,7 +77,7 @@ main{
     padding: 5px;
     font-size: 1em;
     border-radius: 10px;
-    width: 20vw;
+    width: 30vw;
 }
 
 #hero form #email:focus{
@@ -171,7 +171,7 @@ main{
 
 table {
     border-collapse: collapse;
-    width: 50%;
+    width: 75vw;
     margin: 20px;
 }
 th, td {
@@ -255,4 +255,227 @@ footer ul a:active{
 
 footer span{
     margin-left: 40px;
+}
+
+@media(max-width: 920px) {
+    header{
+        gap: 8vw;
+    }
+
+    .title .header-title{
+        font-size: 1.35em;
+    }
+
+    .title .subtitle-title{
+        font-size: 0.9em;
+    }
+
+    nav{
+        font-size: 0.9em;
+    }
+
+    #hero{
+        padding: 5% 6%;
+    }
+
+    #hero h3{
+        font-size: 0.9em;
+    }
+
+    #hero form #email{
+        font-size: 0.9em;
+    }
+
+    #hero form #submit{
+        font-size: 0.9em;
+    }
+
+    .desc h2{
+        font-size: 1em;
+    }
+
+    .desc p{
+        font-size: 0.85em;
+    }
+
+    .img-container img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .vid-caption h1{
+        font-size: 1.35em;
+    }
+
+    .vid-caption p{
+        font-size: 0.9em;
+    }
+
+    .vid-container iframe{
+        width: 500px;
+        height: 300px;
+    }
+
+    .table-container h1{
+        font-size: 1.35em;
+    }
+
+    table{
+        font-size: 0.9em;
+    }
+
+    .product{
+        font-size: 0.9em;
+    }
+
+    .product p{
+        font-size: 0.85em;
+    }
+
+    footer{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 650px) {
+    nav{
+        display: none;
+    }
+
+    #hero h3{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 585px) {
+    .vid-container iframe{
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+    #Pricing{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Pricing .product{
+        width: 65vw;
+    }
+}
+
+@media (max-width: 492px) {
+    .title .header-title{
+        font-size: 1.2em;
+    }
+
+    .title .subtitle-title{
+        font-size: 0.8em;
+    }
+
+    #hero{
+        width: 75vw;
+        overflow: auto;
+        overflow-wrap: break-word; 
+        border-radius: 25%;
+    }
+
+    #hero h3{
+        font-size: 0.75em;
+    }
+
+    #hero form #email{
+        font-size: 0.65em;
+    }
+
+    #hero form #submit{
+        font-size: 0.65em;
+    }
+
+    .desc h2{
+        font-size: 0.9em;
+    }
+
+    .desc p{
+        font-size: 0.8em;
+    }
+
+    #Features .grid .block{
+        flex-direction: column;
+    }
+
+    .vid-caption h1{
+        font-size: 1.2em;
+    }
+
+    .vid-caption p{
+        font-size: 0.8em;
+    }
+
+    .vid-container iframe{
+        width: 75vw;
+        height: 150px;
+    }
+
+    .table-container{
+        text-align: center;
+    }
+
+    .table-container h1{
+        font-size: 1.2em;
+    }
+
+    table{
+        font-size: 0.8em;
+    }
+
+    .product{
+        font-size: 0.8em;
+    }
+
+    .product p{
+        font-size: 0.75em;
+    }
+
+    footer{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 300px) {
+    .img-container img{
+        width: 175px;
+        height: 100px;
+    }
+
+    .vid-caption h1{
+        font-size: 1em;
+    }
+
+    .vid-caption p{
+        font-size: 0.7em;
+    }
+
+    .table-container h1{
+        font-size: 1em;
+    }
+
+    footer{
+        font-size: 0.65em;
+    }
+
+    footer ul{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    footer ul li{
+        margin-bottom: -8px;
+    }
+
+    table{
+        font-size: 0.69em;
+    }
 }
